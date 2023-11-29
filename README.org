@@ -1,0 +1,15 @@
+** SHA-256
+An implementation of SHA-224 and SHA-256 according to RFC-6234.
+
+** Notice
+This implementation is purely software based and no explicit hardware
+instructions were used. Due to this, the performance heavily relies on
+the CPU speed. Also, only little-endian CPUs either x86-64 or AArch64 are
+supported. PowerPC CPUs (uses big-endian) and unsupported due to the padding
+and byte conversion. Although it's possible to patch it up, only if you have
+a PowerPC CPU to test later.
+
+*** References
+***** [[https://www.intel.com/content/www/us/en/developer/articles/technical/intel-sha-extensions.html][1. Intel SHA extensions documentation]]
+***** [[http://web.archive.org/web/20231129160118/https://www.linkedin.com/pulse/accelerating-sha-256-armv8-crypto-instructions-alexander-zhak][2. Post about ARM-v8 SHA extensions]]
+

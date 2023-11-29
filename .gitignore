@@ -50,3 +50,10 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+
+# Others
+*.txt
+*.md
+others/
+test-224
+test-256
